@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Relatório de obras</title>
+</head>
+<body>
+    <header>
+        <img src="logo.svg" alt="Logotipo do sistema de relatórios de Obras: Um capcaete de orbas" width="64" height="64">
+    <h1>Sistema de Chamados de Obras</h1>
+    <p>Sistema criado para gerenciar os andamentos das orbas das empresas terceirzadas</p>
+    </header>
+    <main>
+        <section>
+            <h2>Acesso ao sistema</h2>
+            <p>entre com o seu usuário e senha para ver os relatorios. </p>
+        <!-- AQUI E A PARTE DE USUARIO E SENHA -->
+            <form id="form-login" action="sis.painel.html" method="post">
+
+                <fieldset>
+                    <!--login do usuario-->
+                    <legend> Entre com seus dados</legend> 
+                    <p>           
+                    <label for="usuario">usuário:</label><br>
+                    <input type="text" id="usuario" name="usuario" required minlength="5">
+                    </p>
+                    <!--senha do usuario-->
+                    <p>
+                    <label for="senha">Senha:</label><br>
+                    <input type="password" id="senha" name="senha"  required minlength="6" maxlength="8">
+                    </p>
+                        
+
+                </fieldset>
+                
+                <button type="submit">Entrar</button>
+                <p>Para acessar use o usuário de teste usuário: admin , senha: 123456</p>
+                
+
+
+
+
+
+
+
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>2026 Sistema de Relatóeios de Obras -  FullStack</p>
+    </footer>
+</body>
+</html>

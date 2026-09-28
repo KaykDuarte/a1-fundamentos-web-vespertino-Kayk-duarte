@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Novo Relatório</h1>
+        <h3>Realizar abertura de um novo relatorio</h3>
+<form action="#" method="post" enctype="multpart/form-data">
+<fieldset>
+    <legend>Dados da empresa responsável</legend>
+     <!--dados da empresa-->
+    <p>
+        <label for="empresa">Empresa responsável:</label>
+        <input type="text" name="empresa" id="empresa" required minlength="3">    
+   
+        <label for="email">E-mail da empresa responsável</label>
+        <input type="email" name="email" id="email" required>
+    </p>
+    <!--dados da escola-->
+    <p>
+        <label for="Escola:">Nome da Escola</label>
+        <input  type="text"   name="escola" id="escola" required minlength="5">
+        <label for="inep">Inep da Escola</label>
+        <input type="number" name="Inep" id="inep" required min="10000" max="99999">    
+    </p>
+</fieldset>
+    <!--resumo do relatorio-->
+    <fieldset>
+        <label for="resumo:"> Resumo da Obra:</label><br>
+        <textarea name="resumo" id="resumo" rows="10" cols="93" required minlength="10"></textarea>
+        <p>
+            <label for="fotos">Insira fotos da obra:</label><br>
+            <input type="file" name="fotos" id="fotos" accept="image/*" multiple required>
+        </p>    
+</fieldset>
+<button type="submit">Enviar</button>
+<nav>
+    <ul>
+        <!--vai para pagina de login-->
+        <li><a href="sis.painel.html">Retornar ao Painel de Relatório</a></li>
+    </ul>
+</nav>
+
+
+  <footer>
+        <p>2026 Sistema de Relatóeios de Obras -  FullStack</p>
+    </footer>
+</body>
+</html>
