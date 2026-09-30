@@ -1,34 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Novo Relatório - Sistema de Obras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Novo Relatório</h1>
-        <h3>Realizar abertura de um novo relatorio</h3>
-<form action="#" method="post" enctype="multpart/form-data">
+    <header>
+        <h1>Sistema de Relatórios de Obras</h1>
+    </header>
+       <form action="#" method="post" enctype="multpart/form-data">
 <fieldset>
-    <legend>Dados da empresa responsável</legend>
+    <legend>Abrir novo relatório:</legend>
      <!--dados da empresa-->
     <p>
         <label for="empresa">Empresa responsável:</label>
-        <input type="text" name="empresa" id="empresa" required minlength="3">    
+        <input type="text" name="empresa" id="empresa" required minlength="3">
+    </p>
+    <p>        
    
         <label for="email">E-mail da empresa responsável</label>
         <input type="email" name="email" id="email" required>
+        <p>
+    <label for="telefone">Telefone da empresa responsável:</label>
+    <input type="tel" name="telefone" id="telefone" required pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" title="Use o formato (95) 99999-9999">
+</p>
     </p>
     <!--dados da escola-->
     <p>
-        <label for="Escola:">Nome da Escola</label>
+        <label for="escola">Nome da Escola</label>
         <input  type="text"   name="escola" id="escola" required minlength="5">
         <label for="inep">Inep da Escola</label>
-        <input type="number" name="Inep" id="inep" required min="10000" max="99999">    
+        <input type="number" name="Inep" id="inep" required min="10000000" max="99999999">
+        <p>
+    <label for="data">Data da vistoria:</label>
+    <input type="date" name="data" id="data" required>
+</p>    
     </p>
 </fieldset>
     <!--resumo do relatorio-->
     <fieldset>
+    <legend>Resumo e fotos</legend>   
         <label for="resumo:"> Resumo da Obra:</label><br>
         <textarea name="resumo" id="resumo" rows="10" cols="93" required minlength="10"></textarea>
         <p>
@@ -36,17 +52,13 @@
             <input type="file" name="fotos" id="fotos" accept="image/*" multiple required>
         </p>    
 </fieldset>
-<button type="submit">Enviar</button>
-<nav>
-    <ul>
-        <!--vai para pagina de login-->
-        <li><a href="sis.painel.html">Retornar ao Painel de Relatório</a></li>
-    </ul>
-</nav>
+<button class="btn" type="submit">Enviar</button>
+<a class="voltar" href="sis.painel.html">Retornar ao Painel de Relatório</a>
+
 
 
   <footer>
-        <p>2026 Sistema de Relatóeios de Obras -  FullStack</p>
+        <p>2026 Sistema de Relatórios de Obras -  FullStack</p>
     </footer>
 </body>
 </html>

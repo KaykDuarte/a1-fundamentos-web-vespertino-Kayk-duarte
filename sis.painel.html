@@ -1,44 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Painel - Sistema de Relatórios de Obras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
 </head>
-<body>
+<body class="com-menu-lateral">
+    <aside class="sidebar">
+        <p class="sidebar-marca"><img src="logo.svg" alt="Logo" width="32"> Sistema de Relatórios de Obras</p>
+
+
+        <nav>
+            <ul class="menu-lateral"> 
+                <li><a href="#pendentes">Obras Pendentes</a></li>
+                <li><a href="#paradas">Obras Paradas</a></li>
+                <li><a href="#finalizadas">Obras Finalizadas</a></li>
+                <li><a class="sair" href="sis.login.html">Sair do sistema</a></li>
+            </ul>
+        </nav>
+    </aside>
     <header>
 <h1>Painel de Obras</h1>
-<nav>
     <ul>
         <!--vai para pagina de login-->
-        <li><a href="sis.login.html">Sair do sistema</a></li>
+        
     </ul>
 </nav>
     </header>
     <main>
-        <section>
-            <h2>Bem Vindos ao Sistema de Obras</h2>
-            <P>Escolha uma lista para fazer a busca por categoria</P>
-        <nav>
-            <ul>
-                <li><a href="#Pendentes" >Relatório de Obras pendentes</a></li>
+        <section class="card" id="inicio">
+            <h2>Acompanhamento Geral das Obras Escolares</h2>
+            <nav>
+            <ul class="menu">
+                <li><a href="#pendentes" >Relatório de Obras pendentes</a></li>
                 <li><a href="#paradas">Relatório de Obras paradas</a></li>
                 <li><a href="#finalizadas">Relatório de obras finalizadas</a></li>
+               
+            
             </ul>
         </nav>
 
         </section>
-    </main>
+    
+    <section class="card"> 
 <h2>Realizar um novo Relatório</h2>
 <p>
-    <nav>
-        <ul>
-            <li><a href="sis.novo.rel.html">Novo Relatorio</a></li>
-        </ul>
-    </nav>
+    
+<a class="btn" href="sis.novo.rel.html">Novo Relatório</a></li>
+        
+    
 </p>
+   </main>
   <footer>
-        <p>2026 Sistema de Relatóeios de Obras -  FullStack</p>
+        <p>2026 Sistema de Relatórios de Obras -  FullStack</p>
     </footer>
 </body>
 </html>
