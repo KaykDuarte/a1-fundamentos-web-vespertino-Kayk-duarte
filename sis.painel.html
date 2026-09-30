@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,13 +11,20 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body class="com-menu-lateral">
     <aside class="sidebar">
-        <p class="sidebar-marca"><img src="logo.svg" alt="Logo" width="32"> Sistema de Relatórios de Obras</p>
+        <figure class="sidebar-marca">
+            <img class="card" src="logo.svg"
+                alt="Logo Fiscalização de Obras Escolares – Boa Vista RR: prédios azuis sobre um livro aberto em azul, verde e amarelo"
+                width="200" height="200">
+            <figcaption>Relatórios de Obras</figcaption>
+        </figure>
+
 
 
         <nav>
-            <ul class="menu-lateral"> 
+            <ul class="menu-lateral">
                 <li><a href="#pendentes">Obras Pendentes</a></li>
                 <li><a href="#paradas">Obras Paradas</a></li>
                 <li><a href="#finalizadas">Obras Finalizadas</a></li>
@@ -25,39 +33,51 @@
         </nav>
     </aside>
     <header>
-<h1>Painel de Obras</h1>
-    <ul>
-        <!--vai para pagina de login-->
-        
-    </ul>
-</nav>
+        <h1>Painel de Obras</h1>
     </header>
     <main>
-        <section class="card" id="inicio">
-            <h2>Acompanhamento Geral das Obras Escolares</h2>
-            <nav>
-            <ul class="menu">
-                <li><a href="#pendentes" >Relatório de Obras pendentes</a></li>
-                <li><a href="#paradas">Relatório de Obras paradas</a></li>
-                <li><a href="#finalizadas">Relatório de obras finalizadas</a></li>
-               
-            
-            </ul>
-        </nav>
+
+
+        <!--tentativa dashboard pizza-->
+        <section class="card graficos">
+            <h2>Gráfico de Status das Obras</h2>
+            <figure>
+                <p class="pizza"><span><strong>6</strong>obras</span></p>
+                <figcaption>Distribuição de Obras</figcaption>
+                <ul class="legenda">
+                    <li class="pendente">Obras Pendentes(1)</li>
+                    <li class="parada">Obras Paradas(2)</li>
+                    <li class="finalizada">Obras Finalizadas(3)</li>
+                </ul>
+            </figure>
+            <figure>
+                <ul class="barras">
+                    <li class="pendente" title="pendente 1 obra"><span class="valor">1</span><span class="barra"
+                            style="--valor: 33.33%"></span></li>
+                    <li class="parada" title="parada 2 obras"><span class="valor">2</span><span class="barra"
+                            style="--valor: 66.66%"></span></li>
+                    <li class="finalizada" title="finalizada 3 obras"><span class="valor">3</span><span class="barra"
+                            style="--valor: 100%"></span></li>
+                </ul>
+            </figure>
+
 
         </section>
-    
-    <section class="card"> 
-<h2>Realizar um novo Relatório</h2>
-<p>
-    
-<a class="btn" href="sis.novo.rel.html">Novo Relatório</a></li>
-        
-    
-</p>
-   </main>
-  <footer>
-        <p>2026 Sistema de Relatórios de Obras -  FullStack</p>
+        <!--mapa das obras-->
+        <section class="card">
+            <h2>Mapa das Obras</h2>
+            <p>Mapa com a localização das obras escolares em andamento</p>
+            <iframe class="mapa" src="https://maps.google.com/maps?q=Boa+Vista,+RR&z=13&output=embed"
+                title="Mapa de Boa Vista com a localização das obras escolares" loading="lazy"> </iframe>
+            <a class="btn btn-contorno" href="https://www.google.com/maps/search/?api=1&query=Boa+Vista,+RR"
+                target="_blank" rel="noopener">Abrir no Google Maps</a>
+        </section>
+        <a class="btn" href="sis.novo.rel.html">Novo Relatório</a>
+
+    </main>
+    <footer>
+        <p>2026 Sistema de Relatórios de Obras - FullStack</p>
     </footer>
 </body>
+
 </html>
