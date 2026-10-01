@@ -20,11 +20,15 @@
                 width="200" height="200">
             <figcaption>Relatórios de Obras</figcaption>
         </figure>
+<!-- menu sanduiche-->
+ <input type="checkbox" id="abrir-menu" class="menu-toggle">
+        <label for="abrir-menu" class="menu-botao">☰</label>
 
 
-
-        <nav>
+        <nav class="menu-nav">
+            <h2 class="menu-titulo">Navegação</h2>
             <ul class="menu-lateral">
+                <li><a class="ativo" href="sis.painel.html">Relatórios de Obras</a></li>
                 <li><a href="#pendentes">Obras Pendentes</a></li>
                 <li><a href="#paradas">Obras Paradas</a></li>
                 <li><a href="#finalizadas">Obras Finalizadas</a></li>
@@ -32,11 +36,32 @@
             </ul>
         </nav>
     </aside>
-    <header>
+    <header class="topo">
         <h1>Painel de Obras</h1>
     </header>
     <main>
-
+<section class="kpis-obras">
+            <article class="kpi total">
+                <h2>Total de obras</h2>
+                <p class="numero">6</p>
+                <p>Obras cadastradas</p>
+            </article>
+            <article class="kpi pendente" id="pendentes">
+                <h2>Obras pendentes</h2>
+                <p class="numero">1</p>
+                <p>Aguardando andamento</p>
+            </article>
+            <article class="kpi parada" id="paradas">
+                <h2>Obras paradas</h2>
+                <p class="numero">2</p>
+                <p>Sem andamento</p>
+            </article>
+            <article class="kpi finalizada" id="finalizadas">
+                <h2>Obras finalizadas</h2>
+                <p class="numero">3</p>
+                <p>Concluídas</p>
+            </article>
+        </section>
 
         <!--tentativa dashboard pizza-->
         <section class="card graficos">

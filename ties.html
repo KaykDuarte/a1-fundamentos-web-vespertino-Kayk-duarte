@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ties do Sistema</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Ties do Sistema</h1>
+        <p>Este é um painel de visualização do sistema de relatórios de chamados e obras.</p>
+        <nav>
+            <ul class="atalhos">
+                <li><a href="reservado.html" aria-current="page">Painel de dashboard n8n</a></li>
+                <li><a href="sis.painel.html" aria-current="page">Relatório de Obras</a></li>
+                <li><a href="https://www.google.com/maps/search/?api=1&query=Boa+Vista,+RR">Mapa das Obras Escolares</a>
+                </li>
+            </ul>
+    </header>
+    <main>
+
+        <!--painel reservado para o dashboard n8n -->
+        <section class="card">
+            <h2>Dashboard de Relatórios de Chamados</h2>
+            <p>Resumo dos chamados abertos, em andamento e finalizados.</p>
+            <ul class="kpis">
+                <li><strong>42</strong> Abertos: 5</li>
+                <li><strong>3</strong> em Andamento</li>
+                <li><strong>7</strong> Finalizados</li>
+            </ul>
+            <article class="tabela-rolagem">
+                <h3>Chamados Recentes</h3>
+                <table class="tabela">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Data</th>
+                            <th>Status</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>001</td>
+                            <td>2024-06-01</td>
+                            <td>Aberto</td>
+                            <td>Problema na estrutura do prédio escolar.</td>
+                        </tr>
+                        <tr>
+                            <td>002</td>
+                            <td>2024-06-02</td>
+                            <td>Em Andamento</td>
+                            <td>Reparo no sistema elétrico da escola.</td>
+                        </tr>
+                        <tr>
+                            <td>003</td>
+                            <td>2024-06-03</td>
+                            <td>Finalizado</td>
+                            <td>Pintura das salas de aula concluída.</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </article>
+            <a class="btn btn-contorno" href="link do meu n8n" target="_blank" rel="noopener">Acessar Relatóriosdo
+                dashboard de Chamados</a>
+        </section>
+        <!--dashboard do relatorio de obras-->
+        <section class="card graficos">
+            <h2>Gráfico de Status das Obras</h2>
+            <figure>
+                <p class="pizza"><span><strong>6</strong>obras</span></p>
+                <figcaption>Distribuição de Obras</figcaption>
+                <ul class="legenda">
+                    <li class="pendente">Obras Pendentes(1)</li>
+                    <li class="parada">Obras Paradas(2)</li>
+                    <li class="finalizada">Obras Finalizadas(3)</li>
+                </ul>
+            </figure>
+            <!--dashboard barras -->
+            <figure>
+                <ul class="barras">
+                    <li class="pendente" title="pendente 1 obra">
+                        <span class="valor">1</span>
+                        <span class="barra" style="--valor: 33.33%">
+                        </span>
+                    </li>
+                    <li class="parada" title="parada 2 obras">
+                        <span class="valor">2</span>
+                        <span class="barra" style="--valor: 66.66%">
+                        </span>
+                    </li>
+                    <li class="finalizada" title="finalizada 3 obras">
+                        <span class="valor">3</span>
+                        <span class="barra" style="--valor: 100%">
+                        </span>
+                    </li>
+                </ul>
+            </figure>
+
+
+
+
+
+    </main>
+    <footer>
+        <p>2026 Sistema de Relatórios de Obras - FullStack</p>
+    </footer>
+</body>
+
+</html>
