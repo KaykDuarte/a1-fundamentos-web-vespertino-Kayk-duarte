@@ -13,66 +13,81 @@
 
 <body>
     <header>
-        <h1>Sistema de Relatórios de Obras</h1>
-    </header>
-    <form action="#" method="post" enctype="multpart/form-data">
-        <fieldset>
-            <legend>Abrir novo relatório:</legend>
-            <!--dados da empresa-->
-            <p>
-                <label for="empresa">Empresa responsável:</label>
-                <input type="text" name="empresa" id="empresa" required minlength="3">
-            </p>
-            <p>
 
-                <label for="email">E-mail da empresa responsável</label>
-                <input type="email" name="email" id="email" required>
-            <p>
-                <label for="telefone">Telefone da empresa responsável:</label>
-                <input type="tel" name="telefone" id="telefone" required pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}"
-                    title="Use o formato (95) 99999-9999">
-            </p>
-            </p>
-            <!--dados da escola-->
-            <p>
-                <label for="escola">Nome da Escola</label>
-                <input type="text" name="escola" id="escola" required minlength="5">
-                <label for="inep">Inep da Escola</label>
-                <input type="number" name="Inep" id="inep" required min="10000000" max="99999999">
-            <p>
-                <label for="data">Data da vistoria:</label>
-                <input type="date" name="data" id="data" required>
-            </p>
-            <!--status de andamento da obra no formulário-->
-            <p>
-                <label for="status">Status da Obra:</label>
-                <select name="status" id="status" required>
-                    <option value="">Selecione...</option>
-                    <option value="em_andamento">Em Andamento</option>
-                    <option value="concluida">Concluída</option>
-                    <option value="pendente">Pendente</option>
-                </select>
-            </p>
-        </fieldset>
-        <!--resumo do relatorio-->
-        <fieldset>
-            <legend>Resumo e fotos</legend>
-            <label for="resumo:"> Resumo da Obra:</label><br>
-            <textarea name="resumo" id="resumo" rows="10" cols="93" required minlength="10"></textarea>
-            <p>
-                <label for="fotos">Insira fotos da obra:</label><br>
-                <input type="file" name="fotos" id="fotos" accept="image/*" multiple required>
-            </p>
-        </fieldset>
-        <button class="btn" type="submit">Enviar</button>
+        <h1>Sistema de Relatórios de Obras</h1>
+
+    </header>
+    <main>
+        <section>
+            <h2>Novo Relatório de Obras</h2>
+            <p>Insira as informações da obra, empresa responsável e escola.</p>
+        </section>
+        <form action="#" method="post" enctype="multipart/form-data">
+
+
+            <fieldset>
+                <legend>Abrir novo relatório:</legend>
+                <!--dados da empresa-->
+                <p>
+                    <label for="empresa">Empresa responsável:</label>
+                    <input type="text" name="empresa" id="empresa" required minlength="3">
+                </p>
+                <p>
+
+                    <label for="email">E-mail da empresa responsável</label>
+                    <input type="email" name="email" id="email" required>
+                </p>
+                <p>
+                    <label for="telefone">Telefone da empresa responsável:</label>
+                    <input type="tel" name="telefone" id="telefone" required pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}"
+                        title="Use o formato (95) 99999-9999">
+                </p>
+                <!--dados da escola-->
+                <p>
+                    <label for="escola">Nome da Escola</label>
+                    <input type="text" name="escola" id="escola" required minlength="5">
+                <p>
+                    <label for="inep">INEP da escola:</label>
+                    <input type="number" name="inep" id="inep" required min="10000000" max="99999999">
+                </p>
+                </p>
+                <p>
+                    <label for="data">Data da vistoria:</label>
+                    <input type="date" name="data" id="data" required>
+                </p>
+                <!--status de andamento da obra no formulário-->
+                <p>
+                    <label for="status">Status da Obra:</label>
+                    <select name="status" id="status" required>
+                        <option value="">Selecione...</option>
+                        <option value="em_andamento">Em Andamento</option>
+                        <option value="parada">Parada</option>
+                        <option value="finalizada">Concluída</option>
+                    </select>
+                </p>
+            </fieldset>
+            <!--resumo do relatorio-->
+            <fieldset>
+                <legend>Resumo e fotos</legend>
+                <p>
+                    <label for="resumo"> Resumo da Obra:</label><br>
+                    <textarea name="resumo" id="resumo" rows="10" cols="93" required minlength="10"></textarea>
+                </p>
+                <p>
+                    <label for="fotos">Insira fotos da obra:</label><br>
+                    <input type="file" name="fotos" id="fotos" accept="image/*" multiple required>
+                </p>
+            </fieldset>
+            <button class="btn" type="submit">Enviar</button>
+        </form>
         <a class="voltar" href="sis.painel.html">Retornar ao Painel de Relatório</a>
 
 
-
-        <footer>
-            <p>2026 Sistema de Relatórios de Obras - FullStack</p>
-            <p><a href="sis.lgpd.html">Privacidade e proteção de dados (LGPD)</a></p>
-        </footer>
+    </main>
+    <footer>
+        <p>2026 Sistema de Relatórios de Obras - FullStack</p>
+        <p><a href="sis.lgpd.html">Privacidade e proteção de dados (LGPD)</a></p>
+    </footer>
 </body>
 
 </html>
