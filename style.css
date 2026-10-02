@@ -701,15 +701,13 @@ footer {
     margin: 0 auto;
 }
 
-.msg-sucesso { display: none; margin-bottom: 1rem; 
-              padding: 0.75rem 1rem; 
-              background-color: #dcfce7; 
-              color: #166534; 
-              border-radius: 0.5rem; 
-              font-weight: 700; 
-              text-align: center; }
-.msg-sucesso:target { display: block; }
-
+.msg-sucesso { margin-bottom: 1rem; 
+     padding: 0.75rem 1rem; 
+     background-color: #dcfce7; 
+     color: #166534; 
+     border-radius: 0.5rem; 
+     font-weight: 700; 
+     text-align: center; }
 @media (max-width: 43.75rem) {
     body.com-menu-lateral {
         grid-template-columns: 1fr;
