@@ -39,8 +39,9 @@
                 </p>
                 <p>
                     <label for="telefone">Telefone da empresa responsável:</label>
-                    <input type="tel" name="telefone" id="telefone" required pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}"
-                        title="Use o formato (95) 99999-9999">
+                    <input type="tel" name="telefone" id="telefone" required
+                            pattern="\(?[0-9]{2}\)?\s?[0-9]{4,5}(-|\s)?[0-9]{4}"
+                            title="Telefone com DDD, ex.: (95) 98125-0169 ou 95981250169">
                 </p>
                 <!--dados da escola-->
                 <p>
