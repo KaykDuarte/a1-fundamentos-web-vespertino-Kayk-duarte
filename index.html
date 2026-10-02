@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Relatório de obras</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="logo.svg"
+            alt="Logo Fiscalização de Obras Escolares – Boa Vista RR: prédios azuis sobre um livro aberto em azul, verde e amarelo"
+            width="200" height="200">
+        <h1>Sistema de Chamados de Obras</h1>
+        <p>Sistema criado para gerenciar os andamentos das orbas das empresas tercerizadas</p>
+    </header>
+    <main>
+        <section>
+            <h2> Entre com seus dados</h2>
+            <p>entre com o seu usuário e senha para ver os relatorios</p>
+
+            <!-- AQUI E A PARTE DE USUARIO E SENHA -->
+            <form class="form-login" action="sis.dashboard.html" method="post">
+
+
+                <!--login do usuario-->
+                <fieldset>
+
+                    <legend>Dados de acesso </legend>
+                    <p>
+                        <label for="usuario">usuário:</label><br>
+                        <input type="text" id="usuario" name="usuario" required minlength="5">
+                    </p>
+                    <!--senha do usuario-->
+                    <p>
+                        <label for="senha">Senha:</label><br>
+                        <input type="password" id="senha" name="senha" required minlength="6" maxlength="8">
+                    </p>
+
+
+                </fieldset>
+
+                <button class="btn" type="submit">Entrar</button>
+                <p class="aviso">Para acessar use o usuário de teste usuário: admin , senha: 123456</p>
+
+
+
+
+
+
+
+
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>2026 Sistema de Relatórios de Obras - FullStack</p>
+        <p><a href="sis.lgpd.html">Privacidade e proteção de dados (LGPD)</a></p>
+    </footer>
+</body>
+
+</html>
