@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -22,9 +23,8 @@
             <h2>Novo Relatório de Obras</h2>
             <p>Insira as informações da obra, empresa responsável e escola.</p>
         </section>
-        <form action="#registrado" method="get">
-            <p id="registrado" class="msg-sucesso">!Relatório registrado com sucesso!</p>
-
+        <form id="form-relatorio" action="#" method="post" enctype="multipart/form-data">
+            <p id="registrado" class="msg-sucesso" hidden>Relatório registrado com sucesso!! Voltando ao painel...</p>
 
             <fieldset>
                 <legend>Abrir novo relatório:</legend>
